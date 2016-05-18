@@ -6,7 +6,7 @@ Tool to consume and convert LSP's Billing Report to Non-standard EDI.
 
 - A model driven tool to read provided model per specific file pattern.
 - Scalable since its config base.
-- Can read UTF-8 data.
+- test change here Can read UTF-8 data.
 - With configurable messaging base on $LANG provided in specific model.
 
 # usage
