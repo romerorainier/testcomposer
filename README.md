@@ -4,6 +4,7 @@
 
 Tool to consume and convert LSP's Billing Report to Non-standard EDI.
 
+- just trying to checking if hooks is still working
 - another test to tigger hooks
 - this will trigger now using ngrok
 - always testing 3
