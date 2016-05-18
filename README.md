@@ -4,7 +4,7 @@
 
 Tool to consume and convert LSP's Billing Report to Non-standard EDI.
 
-- always testing
+- always testing 1
 - A model driven tool to read provided model per specific file pattern.
 - Scalable since its config base.
 - Cant build men read UTF-8 data.
