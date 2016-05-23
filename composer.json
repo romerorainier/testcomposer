@@ -1,0 +1,55 @@
+{
+    "name": "xedi-installer",
+    "description": "XEDI Billing report installer",
+    "homepage": "https://github.com/TraxTechnologies/xedi.git",
+    "repositories": [
+{
+    "type": "package",
+    "package": {
+        "name": "xedi",
+        "version": "0.0.1",
+        "type": "lithium-source",
+        "source": {
+            "url": "https://github.com/romerorainier/testcomposer.git",
+            "type": "git",
+            "reference": "0.0.1"
+        },
+	"require": {
+        "composer/installers": "~1.0"
+    	}
+	  }
+},
+{
+"type": "package",
+ "package": {
+        "name": "PHP-Common",
+        "version": "0.0.1",
+        "source": {
+                "url": "https://github.com/TraxTechnologies/PHP-Common.git",
+            "type": "git",
+            "reference": "0.0.1"
+        }
+        }
+}
+],
+    "require" : {
+        "xedi": "0.0.1",
+	      "PHP-Common": "0.0.1",
+        "phpmailer/phpmailer": "~5.2",
+	      "box/spout": "~2.4"
+    },
+ "extra":{
+        "installer-paths" : {
+            "{$name}": ["xedi"]
+        }
+    },
+    "autoload": {
+        "classmap": [
+          "/xpack/vendor/PHP-Common/PHPCommon.php",
+          "/xpack/vendor/PHP-Common/sysLogger.php",
+          "/xpack/vendor/PHP-Common/Smbclient.php",
+          "/xpack/vendor/box/spout/src/Spout/Autoloader/autoload.php",
+          "/xpack/vendor/phpmailer/phpmailer/PHPMailerAutoload.php"
+        ]
+      }
+}
